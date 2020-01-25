@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "311910522342",
+    "firebase_url": "https://tamuhack-266218.firebaseio.com",
+    "project_id": "tamuhack-266218",
+    "storage_bucket": "tamuhack-266218.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311910522342:android:79749774962f62c793ca27",
+        "android_client_info": {
+          "package_name": "com.example.tamuhack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311910522342-eq5ih9cv2vukg311dgcn6fbrkt5m07qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjfTbIuGYpnVz7QJuzxlkOCRo7QhnwzUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311910522342-eq5ih9cv2vukg311dgcn6fbrkt5m07qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
