@@ -68,8 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 mAuth.signOut();
                 signOut.setVisibility(View.INVISIBLE);
                 request.setVisibility(View.INVISIBLE);
-                Toast.makeText(MainActivity.this, "Sign Out Complete", Toast.LENGTH_SHORT).show();
-
+                revokeAccess();
             }
         });
 
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     private void handleSignInResult(Task<GoogleSignInAccount> task) {
         try {
             GoogleSignInAccount acc = task.getResult(ApiException.class);
-            Toast.makeText(MainActivity.this, "Signed In Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Sign in being processed", Toast.LENGTH_SHORT).show();
             FirebaseGoogleAuth(acc);
         }
         catch (ApiException e) {
@@ -118,12 +117,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()) {
-                    Toast.makeText(MainActivity.this, "Successful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Sign in Successful", Toast.LENGTH_SHORT).show();
                     FirebaseUser user = mAuth.getCurrentUser();
                     updateUI(user);
                 }
                 else {
-                    Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Sign In Failed", Toast.LENGTH_SHORT).show();
                     updateUI(null);
                 }
             }
@@ -139,11 +138,20 @@ public class MainActivity extends AppCompatActivity {
             givenName = googleSignInAccount.getGivenName();
             famileName = googleSignInAccount.getFamilyName();
             email = googleSignInAccount.getEmail();
-
-            Toast.makeText(MainActivity.this, email, Toast.LENGTH_SHORT).show();
         }
         else {
 
         }
+    }
+
+    private void revokeAccess() {
+        mGoogleSignInClient.revokeAccess()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Toast.makeText(MainActivity.this, "Account being Disconnected", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Sign Out Complete", Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 }
