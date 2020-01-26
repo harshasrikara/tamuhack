@@ -248,42 +248,72 @@
   var db = firebase.firestore();
 
   var location;
-  var i = 0;
 
   db.collection("test").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data()}`);
-        console.log("username: " + doc._document.proto.fields.username.stringValue);
-        console.log("email: " +doc._document.proto.fields.email.stringValue);
-        console.log("location: " +doc._document.proto.fields.location.stringValue);
-        console.log("stuff: " +doc._document.proto.fields.stuff.stringValue);
-
+        // console.log(`${doc.id} => ${doc.data()}`);
         var ul = document.getElementById("list");
         var li = document.createElement("li");
         li.appendChild(document.createTextNode("Name: " + doc._document.proto.fields.username.stringValue + " | Email: " + doc._document.proto.fields.email.stringValue + " | Location: " + doc._document.proto.fields.location.stringValue + " | Report: " +doc._document.proto.fields.stuff.stringValue));
         ul.appendChild(li);
 
-        location[i] = doc._document.proto.fields.location.stringValue; i++;
+        map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 4
+        });
+
+        console.log(doc._document.proto.fields.location.stringValue);
+
+
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode( { 'address': doc._document.proto.fields.location.stringValue}, function(results, status) {
+        console.log(results[0].geometry.location);
+
+        if (status == 'OK') {
+          var marker = new google.maps.Marker({
+              map: map,
+              position: results[0].geometry.location
+
+              
+
+          });
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+
     });
   });
 
-  console.log(location);
-
   var map;
+
   function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 4
-    });
+    //var geocoder = new google.maps.Geocoder();
+    
 
-      var myLatLng = {lat: -25.363, lng: 131.044};
+    // for(var j = 0; j < location.length ; j++) {
+    //   var place = location[i];
+    //   geocoder.geocode( { 'address': location}, function(results, status) {
+    //     console.log(results[0].geometry.location);
 
-      var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      title: 'Outbreak'
-    });
-  }
+    //     if (status == 'OK') {
+    //       var marker = new google.maps.Marker({
+    //           map: map,
+    //           position: results[0].geometry.location
+
+              
+
+    //       });
+    //     } else {
+    //       alert('Geocode was not successful for the following reason: ' + status);
+    //     }
+    //   });
+    // }
+ }
+</script>
+
+<script>
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTZ8IY1puUxN1tTfowcKFwas2BudAGN3I&callback=initMap"
 async defer></script>
