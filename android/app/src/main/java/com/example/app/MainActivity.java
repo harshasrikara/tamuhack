@@ -31,7 +31,12 @@ public class MainActivity extends AppCompatActivity {
     private String TAG = "main_activity";
     private FirebaseAuth mAuth;
     private Button signOut;
+    private Button request;
     private int RC_SIGN_IN = 1;
+    String username;
+    String email;
+    String famileName;
+    String givenName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         signInButton = findViewById(R.id.sign_in);
+        request = findViewById(R.id.request);
         signOut = findViewById(R.id.sign_out);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -61,8 +67,21 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mAuth.signOut();
                 signOut.setVisibility(View.INVISIBLE);
+                request.setVisibility(View.INVISIBLE);
                 Toast.makeText(MainActivity.this, "Sign Out Complete", Toast.LENGTH_SHORT).show();
 
+            }
+        });
+
+        request.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Form.class);
+                intent.putExtra("USERNAME", username);
+                intent.putExtra("FAMILYNAME", famileName);
+                intent.putExtra("GIVENNAME", givenName);
+                intent.putExtra("EMAIL", email);
+                startActivity(intent);
             }
         });
     }
@@ -112,13 +131,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser firebaseUser) {
-        signOut.setVisibility(View.VISIBLE);
         GoogleSignInAccount googleSignInAccount = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
         if(firebaseUser != null) {
-            String username = googleSignInAccount.getDisplayName();
-            String givenName = googleSignInAccount.getGivenName();
-            String famileNmae = googleSignInAccount.getFamilyName();
-            String email = googleSignInAccount.getEmail();
+            signOut.setVisibility(View.VISIBLE);
+            request.setVisibility(View.VISIBLE);
+            username = googleSignInAccount.getDisplayName();
+            givenName = googleSignInAccount.getGivenName();
+            famileName = googleSignInAccount.getFamilyName();
+            email = googleSignInAccount.getEmail();
 
             Toast.makeText(MainActivity.this, email, Toast.LENGTH_SHORT).show();
         }
