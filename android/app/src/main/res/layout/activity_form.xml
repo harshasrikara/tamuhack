@@ -127,6 +127,7 @@
             android:text="Submit Form"
             android:id="@+id/submit"/>
 
+
     </LinearLayout>
 
     <TextView
@@ -136,6 +137,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="Fill out the form for submitting a request"
+        android:textSize="16sp"
         android:paddingBottom="30sp"
         android:id="@+id/help"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

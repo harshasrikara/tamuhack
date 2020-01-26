@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -38,7 +39,9 @@ public class Form extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Form.this, "button clicked", Toast.LENGTH_SHORT);
+                TextView textView = findViewById(R.id.help);
+                textView.setText("Thanks for submitting a request");
+                Toast.makeText(getApplicationContext(), "Processing Request", Toast.LENGTH_SHORT).show();
                 saveData();
             }
         });
@@ -74,13 +77,13 @@ public class Form extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
-                        Toast.makeText(Form.this, "Request successfully sent", Toast.LENGTH_SHORT);
+                        Toast.makeText(Form.this, "Request successfully sent", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(Form.this, "Request failed", Toast.LENGTH_SHORT);
+                        Toast.makeText(Form.this, "Request failed", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
