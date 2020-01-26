@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:311910522342:android:79749774962f62c793ca27",
+        "mobilesdk_app_id": "1:311910522342:android:ab03756ccb2b70ba93ca27",
         "android_client_info": {
-          "package_name": "com.example.tamuhack"
+          "package_name": "com.example.app"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "311910522342-l0lm6d5r1n6s56qt2g7gkkdsucs8mkm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app",
+            "certificate_hash": "10ae9731751f7255145042efc0c0b08ea9a14891"
+          }
+        },
         {
           "client_id": "311910522342-eq5ih9cv2vukg311dgcn6fbrkt5m07qv.apps.googleusercontent.com",
           "client_type": 3
