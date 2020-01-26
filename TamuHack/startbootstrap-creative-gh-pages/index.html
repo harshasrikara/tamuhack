@@ -6,7 +6,7 @@
     <style>
         /* Set the size of the div element that contains the map */
        #map {
-         height: 400px;  /* The height is 400 pixels */
+         height: 80%;  /* The height is 400 pixels */
          width: 100%;  /* The width is the width of the web page */
         }
      </style>
@@ -79,12 +79,15 @@
   </header>
 
 
-  <h3>Resource Allocation Map</h3>
+  <h3 style="text-align: center;">Resource Allocation Map</h3>
   <!--The div element for the map -->
   <div id="map"></div>
-  <ul id="list">
-    <li>hi</li>
-  </ul>
+
+  <section class="page-section">
+    <h3 style="text-align: center;">Reports</h3>
+    <ul id="list">
+    </ul>
+  </section>
 
   <!-- About Section -->
   <section class="page-section bg-primary" id="about">
@@ -94,7 +97,7 @@
           <h2 class="text-white mt-0">We're here to the rescue!</h2>
           <hr class="divider light my-4">
           <p class="text-white-50 mb-4">With thousands of people in need of resources due to natural disaster and fewer resources avaiable for allocation, ResourceRescue makes sure that resources are transported to the appropriate locations as fast as possible.</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Make an Entry</a>
+          <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Make an Entry</a> -->
         </div>
       </div>
     </div>
@@ -112,7 +115,7 @@
             <h3 class="h4 mb-2">Clear Visualization</h3>
             <p class="text-muted mb-0">You can clearly see where people need help and if they recieved help.</p>
           </div>
-        </div>
+        </div>                                                                                                                                                                                      
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
@@ -239,10 +242,13 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-</script>
-<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
-<script>
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+  <script>
   var db = firebase.firestore();
+
+  var location;
+  var i = 0;
 
   db.collection("test").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
@@ -254,13 +260,33 @@
 
         var ul = document.getElementById("list");
         var li = document.createElement("li");
-        li.appendChild(document.createTextNode(doc._document.proto.fields.location.stringValue));
+        li.appendChild(document.createTextNode("Name: " + doc._document.proto.fields.username.stringValue + " | Email: " + doc._document.proto.fields.email.stringValue + " | Location: " + doc._document.proto.fields.location.stringValue + " | Report: " +doc._document.proto.fields.stuff.stringValue));
         ul.appendChild(li);
+
+        location[i] = doc._document.proto.fields.location.stringValue; i++;
     });
-});
+  });
 
+  console.log(location);
 
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 4
+    });
+
+      var myLatLng = {lat: -25.363, lng: 131.044};
+
+      var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Outbreak'
+    });
+  }
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTZ8IY1puUxN1tTfowcKFwas2BudAGN3I&callback=initMap"
+async defer></script>
 </body>
 
 </html>
