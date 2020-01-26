@@ -1,0 +1,278 @@
+{
+   "version": "2.0",
+   "channel": {
+      "title": "WHO Disease Outbreak News",
+      "link": [
+         "http://www.who.int/feeds/entity/csr/don/en/rss.xml",
+         {
+            "href": "http://www.who.int/feeds/entity/csr/don/en/rss.xml",
+            "rel": "self"
+         }
+      ],
+      "description": "WHO disease outbreak news",
+      "language": "en-gb",
+      "lastBuildDate": "Sat, 25 Jan 2020 18:04:07 GMT",
+      "managingEditor": "internet who.int (editors)",
+      "webMaster": "webdev@who.int (webdev)",
+      "copyright": "© World Health Organization (WHO), 2020. All rights reserved. http://www.who.int/about/copyright/en/ http://www.who.int/about/licensing/rss/en/",
+      "item": [
+         {
+            "title": "Ebola virus disease – Democratic Republic of the Congo",
+            "link": "http://www.who.int/entity/csr/don/23-january-2020-ebola-drc/en/index.html",
+            "description": "Nine new confirmed cases were reported from 15 to 21 January in the ongoing Ebola virus disease (EVD) outbreak in the Democratic Republic of the Congo.",
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249860"
+            },
+            "category": "news",
+            "pubDate": "Thu, 23 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Novel Coronavirus – Republic of Korea (ex-China)",
+            "link": "http://www.who.int/entity/csr/don/21-january-2020-novel-coronavirus-republic-of-korea-ex-china/en/index.html",
+            "description": {
+               "text": [
+                  "On 20 January 2020, National IHR Focal Point (NFP) for Republic of Korea reported the first case of novel coronavirus in the Republic of Korea. The case is a 35-year-old female, Chinese national, residing in Wuhan, Hubei province in China.",
+                  "The case-patient had developed fever, chill, and muscle pain on 18 January while in Wuhan. She visited a local hospital in Wuhan and was initially diagnosed with a cold. On 19 January , the case-patient was detected with fever (38.3 °C) upon arrival at the Incheon International Airport. The case-patient was transferred to a national designated isolation hospital for testing and treatment. She was tested positive for pancoronavirus reverse transcriptase-polymerase chain reaction (RT-PCR) assay, and subsequently was confirmed positive for novel coronavirus (2019-nCoV) on 20 January by sequencing at the Korea Centers for Disease Control and Prevention (KCDC). Upon detection, the patient had chills, runny nose, and muscle pain."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249805"
+            },
+            "category": "news",
+            "pubDate": "Tue, 21 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Novel Coronavirus – Japan (ex-China)",
+            "link": "http://www.who.int/entity/csr/don/17-january-2020-novel-coronavirus-japan-ex-china/en/index.html",
+            "description": {
+               "text": [
+                  "On 15 January 2020, the Ministry of Health, Labour and Welfare, Japan (MHLW) reported an imported case of laboratory-confirmed 2019-novel coronavirus (2019-nCoV) from Wuhan, Hubei Province, China.",
+                  "The case-patient is male, between the age of 30-39 years, living in Japan."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249769"
+            },
+            "category": "news",
+            "pubDate": "Fri, 17 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Novel Coronavirus – Japan (ex-China)",
+            "link": "http://www.who.int/entity/csr/don/16-january-2020-novel-coronavirus-japan-ex-china/en/index.html",
+            "description": {
+               "text": [
+                  "The Japanese Ministry of Health, Labour and Welfare, today informed the World Health Organization (WHO) of a confirmed case of a novel coronavirus (2019-nCoV) in a person who travelled to Wuhan, China. This is the second confirmed case of 2019-nCoV that has been detected outside of China, following confirmation of a case in Thailand on 13 January. Considering global travel patterns, additional cases in other countries are likely.",
+                  "Coronaviruses are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome and Severe Acute Respiratory Syndrome. 2019-nCoV is a new strain that has not been previously identified in humans."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249742"
+            },
+            "category": "news",
+            "pubDate": "Thu, 16 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Ebola virus disease – Democratic Republic of the Congo",
+            "link": "http://www.who.int/entity/csr/don/16-january-2020-ebola-drc/en/index.html",
+            "description": "Fourteen new confirmed cases were reported from 8 to 14 January in the ongoing Ebola virus disease (EVD) outbreak in the Democratic Republic of the Congo.",
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249764"
+            },
+            "category": "news",
+            "pubDate": "Thu, 16 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Novel Coronavirus – Thailand (ex-China)",
+            "link": "http://www.who.int/entity/csr/don/14-january-2020-novel-coronavirus-thailand/en/index.html",
+            "description": {
+               "text": [
+                  "On 13 January 2020, the Ministry of Public Health (MoPH), Thailand reported the first imported case of lab-confirmed novel coronavirus (2019-nCoV) from Wuhan, Hubei Province, China.",
+                  "The case is a 61-year-old Chinese woman living in Wuhan City, Hubei Province, China. On 5 January 2020, she developed fever with chills, sore throat and headache. On 8 January 2020, she took a direct flight to Thailand from Wuhan City together with five family members in a tour group of 16 people. The traveler with febrile illness was detected on the same day by thermal surveillance at Suvarnabhumi Airport (BKK), Thailand, and was hospitalized the same day. After temperature check and initial assessment, she was transferred to the hospital for further investigations and treatment."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249777"
+            },
+            "category": "news",
+            "pubDate": "Tue, 14 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Novel Coronavirus – China",
+            "link": "http://www.who.int/entity/csr/don/12-january-2020-novel-coronavirus-china/en/index.html",
+            "description": {
+               "text": [
+                  "On 11 and 12 January 2020, WHO received further detailed information from the National Health Commission about the outbreak.",
+                  "WHO is reassured of the quality of the ongoing investigations and the response measures implemented in Wuhan, and the commitment to share information regularly."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249733"
+            },
+            "category": "news",
+            "pubDate": "Sun, 12 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Measles – occupied Palestinian territory",
+            "link": "http://www.who.int/entity/csr/don/10-january-2020-measles-opt/en/index.html",
+            "description": {
+               "text": [
+                  "From 1 January through 19 December 2019, a total of 124 laboratory confirmed cases of measles, including two deaths, were reported in the Gaza Strip (case fatality ratio=1.6%). Of the confirmed cases, forty-nine cases (40%) were hospitalized, 12 were among health care workers, and seventy-five (60%) were males. Gaza Strip has an estimated population of 1.99 million (Palestinian Central Bureau of Statistics-2019).",
+                  "In addition, of the confirmed cases, 57 cases (46%) were un-vaccinated, of which 28 (23%) were among infants between 6 months to one year old, and 29 (23%) among age groups higher than 30 years old. Between 2009 and 2018, the median administrative immunization coverage for the second dose of measles-containing-vaccine (MCV2) was 97%."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249707"
+            },
+            "category": "news",
+            "pubDate": "Fri, 10 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Ebola virus disease – Democratic Republic of the Congo",
+            "link": "http://www.who.int/entity/csr/don/09-january-2020-ebola-drc/en/index.html",
+            "description": "Twelve new confirmed cases were reported from 1 to 7 January in the ongoing Ebola virus disease (EVD) outbreak in North Kivu and Ituri Provinces.",
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249717"
+            },
+            "category": "news",
+            "pubDate": "Thu, 09 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Middle East respiratory syndrome coronavirus (MERS-CoV) – The United Arab Emirates",
+            "link": "http://www.who.int/entity/csr/don/08-january-2020-mers-uae/en/index.html",
+            "description": {
+               "text": [
+                  "On 29 December 2019, the National IHR Focal Point of the United Arab Emirates (UAE) reported one laboratory-confirmed case of Middle East Respiratory Syndrome Coronavirus (MERS-CoV) to WHO.",
+                  "The case is a 74-year-old male national who owns a camel farm located in Al Ain City, Abu Dhabi region in UAE where he is living. He developed fever, cough and sore throat on 8 December 2019 and was admitted to hospital on 10 December, then transferred to ICU on 16 December. A nasopharyngeal aspirate was collected and tested positive for MERS-CoV by reverse transcription polymerase chain reaction (RT-PCR) (UpE and Orf1a genes) on 16 December by the Shiekh Khalifa Medical Center laboratory. He has underlying comorbidities including hyperkalemia, diabetes mellitus with diabetic nephropathy, heart disease, asthma and hypertension. He has a history of close contact with dromedary camels and sheep at his farm in the 14 days prior to the onset of symptoms. He has no history of recent travel and has not been involved in slaughtering animals. Currently, the patient is in stable condition in intensive care unit isolation."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249709"
+            },
+            "category": "news",
+            "pubDate": "Wed, 08 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Pneumonia of unknown cause – China",
+            "link": "http://www.who.int/entity/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/index.html",
+            "description": {
+               "text": [
+                  "On 31 December 2019, the WHO China Country Office was informed of cases of pneumonia of unknown etiology (unknown cause) detected in Wuhan City, Hubei Province of China. As of 3 January 2020, a total of 44 patients with pneumonia of unknown etiology have been reported to WHO by the national authorities in China. Of the 44 cases reported, 11 are severely ill, while the remaining 33 patients are in stable condition. According to media reports, the concerned market in Wuhan was closed on 1 January 2020 for environmental sanitation and disinfection.",
+                  "The causal agent has not yet been identified or confirmed. On 1 January 2020, WHO requested further information from national authorities to assess the risk."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249693"
+            },
+            "category": "news",
+            "pubDate": "Sun, 05 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Ebola virus disease – Democratic Republic of the Congo",
+            "link": "http://www.who.int/entity/csr/don/02-january-2020-ebola-drc/en/index.html",
+            "description": {
+               "text": [
+                  "Since the last",
+                  ", 29 new confirmed cases were reported from 18 to 31 December in the ongoing Ebola virus disease (EVD) outbreak in North Kivu province. The confirmed cases in this week were reported from eight health areas in four health zones: Mabalako (62%,",
+                  "=18), Butembo (14%,",
+                  "=4), Kalunguta (17%,",
+                  "=5), and Katwa (7%,",
+                  "=2). Three of the four cases reported in Butembo in the past 14 days are linked to a transmission chain of more than 50 people that originated in Aloya Health Area, Mabalako Health Zone. One individual classified as a relapse case of EVD, infected several other individuals within the family and through nosocomial transmission (for more information, please see the",
+                  "). In Kalunguta Health Zone, the five cases reported between 24 and 28 December 2019, are a distinct epidemiologically linked chain of transmission, although the source of exposure is currently under investigation.",
+                  "In the past 21 days (11 December to 31 December), 40 confirmed cases were reported from 10 health areas within five neighbouring active health zones in North Kivu province (Figure 2, Table 1): Mabalako (68%,",
+                  "=27), Butembo (13%,",
+                  "=5), Kalunguta (13%,",
+                  "=5), Katwa (5%,",
+                  "=2), and Biena (3%,",
+                  "=1). The majority of the cases (75%,",
+                  "=30) are linked to known chains of transmission."
+               ],
+               "a": [
+                  {
+                     "href": "https://www.who.int/csr/don/19-december-2019-ebola-drc/en/",
+                     "text": "disease outbreak news published on 19 December 2019"
+                  },
+                  {
+                     "href": "https://www.who.int/csr/don/19-december-2019-ebola-drc/en/",
+                     "text": "disease outbreak news published on 19 December 2019"
+                  }
+               ],
+               "i": [
+                  "n",
+                  "n",
+                  "n",
+                  "n",
+                  "n",
+                  "n",
+                  "n",
+                  "n",
+                  "n",
+                  "n"
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249668"
+            },
+            "category": "news",
+            "pubDate": "Thu, 02 Jan 2020 00:00:00 GMT"
+         },
+         {
+            "title": "Middle East respiratory syndrome coronavirus (MERS-CoV) – Qatar",
+            "link": "http://www.who.int/entity/csr/don/26-december-2019-mers-qatar/en/index.html",
+            "description": {
+               "text": [
+                  "On 5 December 2019, the National IHR Focal Point for Qatar reported three laboratory-confirmed cases of Middle East respiratory syndrome (MERS-CoV) infection to WHO.",
+                  "The first case-patient (case #1) is a 67-year-old female from Doha, Qatar. She developed fever, cough, shortness of breath and headache on 23 November 2019, and presented to a hospital on 25 November. On 27 November, she went to the same hospital for follow up. However, on 28 November, her condition worsened and she was admitted to the hospital. A nasopharyngeal swab was collected on 28 November and tested positive for MERS-CoV by reverse-transcriptase polymerase chain reaction (RT-PCR) on 29 November. The patient had underlying medical conditions, and passed away on 12 December 2019. The source of her infection is under investigation. The patient had neither a history of contact with dromedary camels nor recent travel. Follow up and screening of seven household contacts and 40 healthcare worker contacts is ongoing and two asymptomatic secondary cases have been identified so far."
+               ],
+               "br": [
+                  []
+               ]
+            },
+            "guid": {
+               "isPermaLink": "false",
+               "text": "www.who.int.249669"
+            },
+            "category": "news",
+            "pubDate": "Thu, 26 Dec 2019 00:00:00 GMT"
+         }
+      ]
+   }
+}
