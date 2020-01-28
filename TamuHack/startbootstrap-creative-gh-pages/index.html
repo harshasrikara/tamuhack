@@ -249,10 +249,17 @@
 
   var location;
 
-  db.collection("test").get().then((querySnapshot) => {
+
+
+  db.collection("test").onSnapshot({
+    includeMetadataChanges: true
+  },function(querySnapshot) {
+    var ul = document.getElementById("list");
+    ul.innerHTML = "";
     querySnapshot.forEach((doc) => {
         // console.log(`${doc.id} => ${doc.data()}`);
-        var ul = document.getElementById("list");
+
+        
         var li = document.createElement("li");
         li.appendChild(document.createTextNode("Name: " + doc._document.proto.fields.username.stringValue + " | Email: " + doc._document.proto.fields.email.stringValue + " | Location: " + doc._document.proto.fields.location.stringValue + " | Report: " +doc._document.proto.fields.stuff.stringValue));
         ul.appendChild(li);
